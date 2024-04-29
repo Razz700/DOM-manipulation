@@ -10,16 +10,16 @@ warn.innerHTML=`Error: Cannot go below 0`;
 }
 else{
     count--;
-msg.innerHTML=`Your Current Count is: ${count}`;}
+msg.innerHTML=`Your Current Count is:<b>${count}</b>`;}
 });
 document.getElementById("inc").addEventListener("click",()=>{
     count++;
     warn.innerHTML=``;
-msg.innerHTML=`Your Current Count is: ${count}`;
+msg.innerHTML=`Your Current Count is:<b>${count}</b>`;
 document.getElementById("clear").style.display="block";
 });
 document.getElementById("clear").addEventListener("click",()=>{
     count=0;
     document.getElementById("clear").style.display="none";
-    msg.innerHTML=`Your Current Count is: ${count}`;
+    msg.innerHTML=`Your Current Count is:<b>${count}</b>`;
 });
